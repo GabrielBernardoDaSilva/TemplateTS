@@ -1,21 +1,22 @@
 {
-  "name": "ecs",
-  "version": "0.0.0",
-  "description": "ECS",
-  "main": "app.js",
+  "name": "optimal-gateway",
+  "version": "1.0.0",
+  "description": "optimal-gateway",
+  "main": "index.ts",
   "author": {
-    "name": ""
+    "name": "Gabriel Bernardo"
   },
   "scripts": {
-    "build": "tsc --build",
-    "clean": "tsc --build --clean"
+    "dev": "npx nodemon",
+    "start": "npx nodemon",
+    "dev:debug": "nodemon --inspect index.ts"
   },
   "devDependencies": {
-    "@types/node": "^14.14.7",
-    "@typescript-eslint/eslint-plugin": "^5.33.0",
-    "@typescript-eslint/parser": "^5.33.0",
-    "eslint": "^8.21.0",
-    "typescript": "^4.5.2"
+    "@types/node": "^22.9.0",
+    "@typescript-eslint/eslint-plugin": "^8.13.0",
+    "@typescript-eslint/parser": "^8.13.0",
+    "eslint": "^9.14.0",
+    "typescript": "^5.6.3"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
@@ -28,6 +29,10 @@
     ]
   },
   "dependencies": {
-    "reflect-metadata": "^0.2.1"
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "http-proxy-middleware": "^3.0.3",
+    "nodemon": "^3.1.7",
+    "reflect-metadata": "0.2.2"
   }
 }
